@@ -3,7 +3,7 @@ const router = express.Router();
 const path = require("path");
 const fs = require("fs");
 const itemController = require('../../controllers/itemControler.js')
-const verifyJWT = require('../../middleware/verifyJWT.js')
+
 
 
 
