@@ -3,23 +3,23 @@ const router = express.Router();
 const path = require("path");
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "client", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
 router.get("/index.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "client", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
 });
 
 router.get("/admin", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "client", "admin.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "admin.html"));
 });
 
 router.get("/dev", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "client", "dev.html"));
+    res.sendFile(path.join(__dirname, "..", "public", "dev.html"));
   });
 
   router.get("/signIn.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "client", "signIn.html"));
+    res.sendFile(path.join(__dirname, "..", "public", "signIn.html"));
   });
 
   router.get("/create-account.html", (req, res) => {
