@@ -13,6 +13,8 @@ const bodyParser = require('body-parser');
 const multer = require("multer");
 const storage = multer.memoryStorage(); // Store image in memory as buffer
 const upload = multer({ storage });
+const multer = require("multer");
+
 
 app.use(bodyParser.json({ limit: '50mb' })); // or even '50mb' if needed
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
