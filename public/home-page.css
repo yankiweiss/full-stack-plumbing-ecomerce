@@ -1,0 +1,244 @@
+body{
+  margin: 0px;
+}
+
+#mainHeader {
+  text-align: center;
+  background-color: lightblue;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+/*  center element */
+
+.center {
+  text-align: center;
+}
+
+/* sign in section */
+
+#sign-in {
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-in h4 {
+  margin: 5px;
+}
+
+/* Categories on Home Page Displayed */
+#secondCategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#secondCategory .category {
+  margin: 15px;
+  color: white;
+  min-width: 5rem; 
+  max-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+}
+
+#secondCategory .category h1 {
+  color: black;
+  text-align: center;
+
+}
+
+#secondCategory .category h1:hover {
+  color: red;
+ 
+
+}
+
+#secondCategory .category img {
+  width: 100%;
+  border-radius: 8px;
+
+}
+
+
+
+
+
+/* admin page styling the Nav and the form */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 10%;
+  background-color: rgb(233, 232, 232);
+  border-radius: 8px;
+}
+
+nav div {
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+table,
+th,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+
+/*.center {
+  width: 70%;
+  margin: auto;
+  background-color: lightgray;
+  padding-bottom: 50px;
+  border-radius: 8px;
+}*/
+
+/*.center h1{
+  padding: 25px;
+}*/
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+#form div {
+  display: flex;
+  margin: 15px;
+}
+
+/* Alert Section */
+
+.alertsRight {
+  float: right;
+  width: 80vw;
+  text-align: center;
+}
+
+/* user signed in and search flex */
+
+
+
+/*#search{
+  margin: 15px;
+}*/
+
+.hover-menu {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.menu-button {
+  padding: 25px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.options .option {
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.options .option:hover {
+  background-color: #ddd;
+}
+
+.hover-menu:hover .options {
+  display: block;
+}
+
+footer{
+  margin-top: 250px;
+}
+
+/* JWPro logo image */
+
+#jw-image{
+  background-color: transparent;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
