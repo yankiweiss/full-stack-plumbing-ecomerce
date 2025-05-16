@@ -4,7 +4,7 @@
     "routes": [
   {
     "src": "/(.*\\.(js|css|png|jpg|svg|json|html))",
-    "dest": "/$1"
+    "dest": "/public/"
   },
   {
     "src": "/(.*)",
