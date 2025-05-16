@@ -1,0 +1,55 @@
+const express = require("express");
+const router = express.Router();
+const path = require("path");
+
+router.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "index.html"));
+});
+
+router.get("/index.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "index.html"));
+});
+
+router.get("/admin", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "admin.html"));
+});
+
+router.get("/dev", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "dev.html"));
+  });
+
+  router.get("/signIn.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "signIn.html"));
+  });
+
+  router.get("/create-account.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "create-account.html"));
+  });
+
+  router.get("/add-item.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "add-item.html"));
+  });
+
+  router.get("/edit-item.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "edit-item.html"));
+  });
+
+   router.get("/css", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "css.html"));
+  });
+
+  router.get("/category", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "category.html"));
+  });
+
+
+  router.get("/categoryProducts", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "categoryProducts.html"));
+  });
+
+  
+  
+
+  
+
+module.exports = router;
