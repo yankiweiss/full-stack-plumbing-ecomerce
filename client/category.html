@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Category</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="mainHeader">
+      <div id="compnay-info">
+        <img src="images/logo2.webp" style="width: 150px" />
+        <h1 id="js">The Plumbing hub</h1>
+        <h4>Your Plumbing supplies HUB</h4>
+      </div>
+    </header>
+
+    <h1 style="text-align: center">Add Category:</h1>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <div class="row" style="width: 750px; margin: 25px auto 50px auto">
+        <div class="col">
+          <select
+            class="form-select"
+            name="categoryControl"
+            aria-label="Default select example"
+          >
+            <option selected>Please choose Category</option>
+            <option value="Piping">Piping</option>
+            <option value="Connectors">Connectors</option>
+            <option value="Tools">Tools</option>
+          </select>
+        </div>
+        <div class="col">
+          <input
+            name="quantity"
+            type="number"
+            class="form-control"
+            placeholder="Quantity"
+            aria-label="Quantity"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="row" style="width: 750px; margin: 25px auto 50px auto">
+        <div class="col">
+          <input
+            type="file"
+            id="myFile"
+            name="image"
+            accept="image/*"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="row" style="width: 250px; margin: 25px auto 50px auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+      <h2></h2>
+      <h3></h3>
+    </form>
+
+    <script src="add-category.js"></script>
+  </body>
+</html>
