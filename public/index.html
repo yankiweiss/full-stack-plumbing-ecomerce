@@ -1,89 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Plumbing Hub - Home Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Plumbing Hub - Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/home-page.css" />
-  </head>
+  <link rel="stylesheet" href="/home-page.css" />
+</head>
+
 <body>
 
-<!-- Simulate a smartphone / tablet -->
-<!--<div class="mobile-container">
 
-
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <div id="myLinks">
-   <a href="create-account.html">Create Account:</a>
-    <a href="signIn.html">Sign In:</a>
-    <a href="admin">Admin:</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
-
-End smartphone / tablet look 
-</div -->
-
-
-
-
-
-    <header id="mainHeader">
-      <div id="compnay-info">
-        <img src="images/download.png" style="width: 100px" />
-      </div>
-
-      <div id="sign-in">
-        <a href="create-account.html">
-          <h4>Create Account:</h4>
-        </a>
-        <a href="signIn.html">
-          <h4>Sign In:</h4>
-        </a>
-        <a href="admin">
-          <h4>Admin:</h4>
-        </a>
-      </div>
-    </header>
-
-    <div id="search">
-      <!-- Need to work on the below -->
-      <label class="form-label">Search Bar:</label
-      ><input class="form-input" placeholder="Search..." />
+  <header id="mainHeader">
+    <div id="compnay-info">
+      <img src="images/download.png" style="width: 100px" />
     </div>
 
-    <h1>Sales Items</h1>
+      <!-- Need to work on the below -->
+      <input id="search" class="form-input" placeholder="Search..." />
+    
 
-    <!-- All Categories are coming in, in below -->
-    <div id="secondCategory"></div>
+    <div id="sign-in">
+      <a href="create-account.html">
+        <h4>Create Account:</h4>
+      </a>
+      <a href="signIn.html">
+        <h4>Sign In:</h4>
+      </a>
+      <a href="admin">
+        <h4>Admin:</h4>
+      </a>
+    </div>
+  </header>
 
-    <footer
-      style="background-color: aliceblue; padding: 15px; border-radius: 8px"
-    >
-      <h3 style="text-align: center; font-style: italic">
-        Another Great Software Done By:
-        <br /><br /><img
-          id="jw-image"
-          style="width: 200px; display: block; margin: auto"
-          src="images/JW logo Trasparent-01.png"
-        />
-      </h3>
-    </footer>
-    <script src="./home-page.js"></script>
-  </body>
+  
+
+  <h1>Sales Items</h1>
+
+  <!-- All Categories are coming in, in below -->
+  <div id="secondCategory"></div>
+
+  <footer style="background-color: aliceblue; padding: 15px; border-radius: 8px">
+    <h3 style="text-align: center; font-style: italic">
+      Another Great Software Done By:
+      <br /><br /><img id="jw-image" style="width: 200px; display: block; margin: auto"
+        src="images/JW logo Trasparent-01.png" />
+    </h3>
+  </footer>
+  <script src="./home-page.js"></script>
+</body>
+
 </html>
