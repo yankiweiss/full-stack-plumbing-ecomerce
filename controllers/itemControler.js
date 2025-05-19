@@ -4,6 +4,7 @@ const fileUpload = require("express-fileupload");
 
 const getAllItems = async (req, res) => {
   try {
+    const category = req.query.category;
     const query = category ? { category: category } : {};
     const items = await Item.find(query).exec();
    
