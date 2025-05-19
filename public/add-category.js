@@ -19,7 +19,7 @@ const sendFiles = async () => {
     formData.append("image", file); // Field name must match what backend expects
 
     try {
-        const response = await fetch("http://localhost:3500/categories", {
+        const response = await fetch("https://full-stack-plumbing-ecomerce.vercel.app/categories", {
             method: "POST",
             body: formData,
 
