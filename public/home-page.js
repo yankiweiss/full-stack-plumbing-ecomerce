@@ -85,5 +85,4 @@ function redirectToOtherPage(categoryName) {
   window.location.href = `categoryProducts.html?category=${encodeURIComponent(
     categoryName
   )}`;
-  console.log(categoryName)
 }

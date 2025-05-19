@@ -1,17 +1,41 @@
+body{
+    margin: 0;
+}
+
 #mainHeader{
     display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    border-radius: 8px;
+    align-items: center;
 }
 
 #container{
     max-width: 85%;
+    margin: 0 auto;
 }
 
 #itemByCategory{
+    margin-top: 150px;
     display: flex;
 }
 
 .product{
     max-width: 250px;
+    margin: 15px;
+    border: 1px rgb(219, 219, 219) solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product:hover{
+    color: red;
+}
+#search{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
 

@@ -26,6 +26,7 @@ const getAllItems = async (req, res) => {
     if (itemsWithImage.length === 0) {
       return res.status(200).json({ message: "No items were found" });
     }
+    
 
     res.json(itemsWithImage);
   } catch (err) {
@@ -107,16 +108,33 @@ const getItem = async (req, res) => {
   if (!req?.params?.id)
     return res.status(400).json({ message: "No ID Param was provided" });
 
-  const item = await Item.findOne({ _id: req.params.id }).exec();
+  try {
+    const item = await Item.findOne({ _id: req.params.id }).exec();
 
-  if (!item) {
-    return res.status(204).json({ message: "no item matched the id" });
+    if (!item) {
+      return res.status(204).json({ message: "No item matched the id" });
+    }
+
+    // Convert image buffer to base64 if it exists
+    const itemWithImage = {
+      _id: item._id,
+      name: item.name,
+      price: item.price,
+      description: item.description,
+      image: item.image?.data
+  ? `data:${item.image.contentType};base64,${Buffer.from(item.image.data).toString("base64")}`
+  : null,
+    };
+
+    console.log('Sending item image as:', itemWithImage.image ? 'Base64 string' : 'No image');
+console.log('itemWithImage:', itemWithImage);
+
+    res.json(itemWithImage);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
   }
-
-  
-  res.json(item);
 };
-
 
 
 
