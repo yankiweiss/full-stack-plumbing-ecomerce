@@ -14,7 +14,7 @@ console.log("hi and hello")
       })
       .catch(error => {
         console.error("Error fetching items:", error);
-        document.getElementById("items").textContent = "Failed to load items.";
+        document.getElementById("itemByCategory").textContent = "Failed to load items.";
       });
 
     function displayItems(products) {
