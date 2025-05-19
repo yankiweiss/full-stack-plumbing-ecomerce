@@ -18,7 +18,7 @@ console.log("hi and hello")
       });
 
     function displayItems(products) {
-      const items = document.getElementById("items");
+      const items = document.getElementById("itemByCategory");
       items.innerHTML = ""; // Clear old items first
 
       if (!Array.isArray(products) || products.length === 0) {
