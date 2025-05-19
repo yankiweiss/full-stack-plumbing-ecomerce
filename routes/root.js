@@ -43,7 +43,7 @@ router.get("/dev", (req, res) => {
   });
 
 
-  router.get("/categoryProducts", (req, res) => {
+  router.get("/categoryProducts.html", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "public", "categoryProducts.html"));
   });
 
