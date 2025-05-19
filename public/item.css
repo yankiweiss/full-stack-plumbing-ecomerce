@@ -11,8 +11,8 @@ body{
 }
 
 #container{
-    max-width: 85%;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 5px auto;
 }
 
 #item-container{
@@ -23,14 +23,37 @@ body{
 .item{
     background-color: red;
     max-width: 50%;
-    padding: 15px;
     border: 1px solid rgb(190, 190, 190);
     background-color: rgb(247, 253, 255);
     border-radius: 8px;
+    text-align: center;
+    padding: 5px;
 }
 
 .item img{
-    min-width: 100%;
+    width: 100%;
     border-radius: 8px;
 }
+
+#btn-order{
+    background-color: rgb(0, 0, 185);
+    border-radius: 8px;
+    padding: 8px;
+    border: 3px solid rgb(228, 228, 228);
+    color: white;
+    font-size: 18px;
+    width: 150px;
+}
+
+#btn-cart{
+     background-color: rgb(0, 187, 250);
+    border-radius: 8px;
+    padding: 8px;
+    border: 3px solid rgb(228, 228, 228);
+    color: white;
+    font-size: 18px;
+    width: 150px;
+}
+
+
 

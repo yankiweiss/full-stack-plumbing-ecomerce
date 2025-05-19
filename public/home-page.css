@@ -1,5 +1,10 @@
 body{
-  margin: 0px;
+ background-color: rgb(244, 252, 255);
+}
+
+#container{
+  width: 95%;
+  margin: auto;
 }
 
 #mainHeader {
@@ -9,22 +14,24 @@ body{
   border-radius: 8px;
   display: flex;
   justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px auto;
 }
 
-#search{
+#search {
   border-radius: 8px;
   outline: none;
   border: none;
   font-size: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: red;
 }
 
@@ -50,13 +57,12 @@ a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 #secondCategory .category {
   margin: 15px;
   color: white;
-  min-width: 5rem; 
+  min-width: 5rem;
   max-width: 20rem;
   border: 1px solid rgba(0, 0, 0, 0.144);
   background-color: rgb(243, 243, 243);
@@ -66,24 +72,16 @@ a:hover{
 #secondCategory .category h1 {
   color: black;
   text-align: center;
-
 }
 
 #secondCategory .category h1:hover {
   color: red;
- 
-
 }
 
 #secondCategory .category img {
   width: 100%;
   border-radius: 8px;
-
 }
-
-
-
-
 
 /* admin page styling the Nav and the form */
 
@@ -155,8 +153,6 @@ td {
 
 /* user signed in and search flex */
 
-
-
 /*#search{
   margin: 15px;
 }*/
@@ -165,7 +161,6 @@ td {
   position: relative;
   display: inline-block;
   background-color: rgb(255, 255, 255);
-
 }
 
 .menu-button {
@@ -200,21 +195,19 @@ td {
   display: block;
 }
 
-footer{
+footer {
   margin-top: 250px;
 }
 
 /* JWPro logo image */
 
-#jw-image{
+#jw-image {
   background-color: transparent;
 }
-
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .topnav {
   overflow: hidden;
@@ -248,6 +241,6 @@ body {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
