@@ -7,7 +7,7 @@ function auth(e) {
    const userValue = user.value;
    const pwdValue = pwd.value;
     e.preventDefault();
-    fetch('http://localhost:3500/auth', {
+    fetch('https://full-stack-plumbing-ecomerce.vercel.app/auth', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
