@@ -36,7 +36,7 @@
 //displayItemsData()
 
 function displayData() {
-  fetch("http://localhost:3500/categories")
+  fetch("https://full-stack-plumbing-ecomerce.vercel.app/categories")
     .then((res) => res.json())
     .then((data) => {
       displayCategories(data);
