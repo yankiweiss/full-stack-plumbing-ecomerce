@@ -1,0 +1,49 @@
+#search{
+    width: 500px;
+    float: right;
+}
+.clear{
+    clear: both;
+    background-color: aqua;
+}
+
+.item{
+    background-color: rgb(240, 240, 240);
+    width: 350px;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+input{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.save-button{
+    border-radius: 8px;
+}
+textarea{
+    height: auto;
+    overflow: hidden;
+}
+
+#categories{
+display: flex;
+}
+
+.box{
+    margin: 15px;
+}
