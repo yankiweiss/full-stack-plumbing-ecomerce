@@ -1,2 +1,36 @@
+body{
+    margin: 0;
+}
 
+#mainHeader{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    border-radius: 8px;
+    align-items: center;
+}
+
+#container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+#item-container{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+.item{
+    background-color: red;
+    max-width: 50%;
+    padding: 15px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(247, 253, 255);
+    border-radius: 8px;
+}
+
+.item img{
+    min-width: 100%;
+    border-radius: 8px;
+}
 

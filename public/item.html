@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="item.css">
 </head>
+
 <body>
 
-    <h1>This is the Item Page!</h1>
+    <div id="container">
 
-    <div id="items"></div>
+        <header id="mainHeader">
+            <div id="compnay-info">
+                <img src="images/download.png" style="width: 100px" />
+            </div>
+
+            <!-- Need to work on the below -->
+            <div>
+                <input id="search" class="form-input" placeholder="Search..." />
+            </div>
 
 
-    <script src="item.js"></script>
-    
+        </header>
+
+        <div id="item-container">
+
+            <div id="items"></div>
+
+            <div>
+                <button>Order Now</button>
+            </div>
+        </div>
+
+
+        <script src="item.js"></script>
+
 </body>
+
 </html>

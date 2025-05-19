@@ -17,7 +17,7 @@ if (!id) {
     .then((res) => res.json())
     .then((data) => {
       displayItem(data);
-     console.log("Image data:", data.image);
+
     })
     .catch((error) => {
       console.error("Error fetching items:", error);
@@ -29,6 +29,7 @@ const item = document.getElementById("items");
 
 function displayItem(data) {
   const div = document.createElement("div");
+  div.className = 'item'
 
   div.innerHTML = ` 
     ${data.image ? `<img src="${data.image}" alt="${data.name}" width="200" />` : ""}
