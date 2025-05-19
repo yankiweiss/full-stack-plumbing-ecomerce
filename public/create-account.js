@@ -7,7 +7,7 @@ function submitUserInfo(e) {
   const emailValue = email.value;
   const passValue = password.value;
   e.preventDefault();
-  fetch("http://localhost:3500/register", {
+  fetch("https://full-stack-plumbing-ecomerce.vercel.app/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
