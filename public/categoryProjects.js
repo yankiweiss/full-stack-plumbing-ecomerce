@@ -7,7 +7,7 @@ console.log("hi and hello")
 
     const category = getQueryParam("category");
 
-    fetch(`http://localhost:3500/items?category=${encodeURIComponent(category)}`)
+    fetch(`https://full-stack-plumbing-ecomerce.vercel.app?category=${encodeURIComponent(category)}`)
       .then(res => res.json())
       .then(data => {
         displayItems(data);

@@ -113,6 +113,28 @@ const getItem = async (req, res) => {
   res.json(item);
 };
 
+const getItemByCategory = async (req, res) => {
+  const category = req.query.category;
+
+  if(!category){
+    return res.status(400).json({ message: "No category was provided" });
+  }
+
+  try {
+    const items = await Item.find({ category: category }).exec();
+
+    if (!items || items.length === 0) {
+      return res.status(204).json({ message: "No items found for this category" });
+    }
+
+    res.json(items);
+  } catch (error) {
+    console.error("Error fetching items by category:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+
 
 module.exports = {
   getAllItems,

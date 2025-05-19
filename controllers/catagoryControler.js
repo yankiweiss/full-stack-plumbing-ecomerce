@@ -2,36 +2,6 @@ const Category = require("../model/Category.js");
 const fileUpload = require("express-fileupload");
 
 
-//const getAllItems = async (req, res) => {
-//  try {
-//    const items = await Item.find();
-//
-//    const itemsWithImage = items.map((item) => {
-//      return {
-//        _id: item._id,
-//        name: item.name,
-//        price: item.price,
-//        description: item.description,
-//        image: item.image?.data
-//          ? `data:${item.image.contentType};base64,${item.image.data.toString(
-//              "base64"
-//            )}`
-//          : null,
-//      };
-//    });
-//
-//    if (itemsWithImage.length === 0) {
-//      return res.status(200).json({ message: "No items were found" });
-//    }
-//
-//    res.json(itemsWithImage);
-//  } catch (err) {
-//    console.error(err);
-//    res.status(500).json({ message: err.message });
-//  }
-//};
-
-
 const getAllCategories = async (req, res) => {
   try {
     const categories = await Category.find();
