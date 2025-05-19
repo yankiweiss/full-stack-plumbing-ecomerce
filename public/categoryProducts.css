@@ -18,14 +18,20 @@ body{
 #itemByCategory{
     margin-top: 150px;
     display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    justify-content: center;
 }
 
 .product{
-    max-width: 250px;
+    min-width: 30%;
+    max-width: 35%;
     margin: 15px;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 8px;
     text-align: center;
+  padding: 35px;
+
 }
 
 .product:hover{
