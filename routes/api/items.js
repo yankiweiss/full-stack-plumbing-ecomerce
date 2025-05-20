@@ -9,6 +9,8 @@ const itemController = require('../../controllers/itemControler.js')
 
 // JSON DATA
 
+router.route("/search/:query").get(itemController.searchItems);
+
 router
   .route("/")
   .get( itemController.getAllItems)
@@ -21,6 +23,6 @@ router
 router.route("/:id").get(itemController.getItem)
 .put(itemController.updateItem)
 
-router.route("/:query").get(itemController.searchItems)
+
 
 module.exports = router;

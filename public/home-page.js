@@ -49,7 +49,7 @@ function searchItems(e) {
   
   console.log(query)
   fetch(
-    `https://full-stack-plumbing-ecomerce.vercel.app/items?query=${encodeURIComponent(
+    `https://full-stack-plumbing-ecomerce.vercel.app/items/search/${encodeURIComponent(
       query
     )}`
   ).then((response) => response.json()).then((data) => console.log(data))

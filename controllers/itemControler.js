@@ -138,8 +138,12 @@ console.log('itemWithImage:', itemWithImage);
 
 
 const searchItems = async (req, res) => {
-  const searchTerm = req.params.query;
-  console.log(searchTerm)
+  const searchTerm = req.params.query || "";
+  
+
+  if (typeof searchTerm !== "string") {
+  return res.status(400).json({ message: "Invalid search term" });
+}
 
   try {
     const items = await Item.find({name: { $regex: searchTerm, $options: 'i' }}).exec();
