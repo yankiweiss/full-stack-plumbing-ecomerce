@@ -24,13 +24,13 @@ body{
 }
 
 .product{
-    min-width: 30%;
+    min-width: 45%;
     max-width: 35%;
     margin: 15px;
     border: 1px rgb(219, 219, 219) solid;
     border-radius: 8px;
     text-align: center;
-  padding: 35px;
+  padding: 5px;
 
 }
 
