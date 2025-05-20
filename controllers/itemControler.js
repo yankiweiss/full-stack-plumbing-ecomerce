@@ -137,6 +137,22 @@ console.log('itemWithImage:', itemWithImage);
 };
 
 
+const searchItems = async (req, res) => {
+  const searchTerm = req.params.query;
+
+  try {
+    const items = await Item.find({name: { $regex: searchTerm, $options: 'i' }}).exec();
+    res.json(items)
+  
+  } catch (error) {
+    console.log(error)
+  }
+
+  
+    
+}
+
+
 
 module.exports = {
   getAllItems,
@@ -144,4 +160,5 @@ module.exports = {
   updateItem,
   deleteItem,
   getItem,
+  searchItems
 };

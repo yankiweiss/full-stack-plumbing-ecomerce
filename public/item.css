@@ -55,5 +55,12 @@ body{
     width: 150px;
 }
 
+#search {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
 
 

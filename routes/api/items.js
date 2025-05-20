@@ -21,4 +21,6 @@ router
 router.route("/:id").get(itemController.getItem)
 .put(itemController.updateItem)
 
+router.route("/:query").get(itemController.searchItems)
+
 module.exports = router;

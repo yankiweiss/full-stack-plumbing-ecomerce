@@ -1,39 +1,47 @@
-const User = require("../model/User");
+const usersDB = {
+    users: require("../model/users.json"),
+    setUsers: function (data) {
+        this.users = data;
+    },
+};
 
+const fsPromises = require("fs").promises;
 const path = require("path");
 const bcrypt = require("bcryptjs");
 
 const handleNewUser = async (req, res) => {
-  const { user, pwd } = req.body;
-  if (!user || !pwd)
-    return res
-      .status(400)
-      .json({ message: "username and password are required" });
+    const { user, pwd } = req.body;
 
-  const duplicate = await User.findOne({ username: user }).exec();
+    if (!user || !pwd)
+        return res
+            .status(400)
+            .json({ message: "Username and Password are Required" });
 
-  if (duplicate)
-    return res
-      .status(409)
-      .json({
-        message: `there is already a user with ${user}, Please choose another username`,
-      });
+    const duplicate = usersDB.users.find((person) => person.username === user);
 
-  try {
-    const hashedPwd = await bcrypt.hash(pwd, 10);
+    if (duplicate)
+        return res
+            .status(409)
+            .json({ message: "there is already a Username with that name" });
 
-    const result = await User.create({
-      username: user,
-      password: hashedPwd,
-    });
+    try {
+        const hashedPwd = await bcrypt.hash(pwd, 10);
 
-  
+        const newUser = {'username' : user, 'password' : hashedPwd}
+        usersDB.setUsers([...usersDB.users, newUser]);
 
-    res.status(201).json({ message: `${user}, was created ` });
-  } catch (error) {
-    console.error(error).json({ message: error.message });
-  }
+        await fsPromises.writeFile(
+            path.join(__dirname, '..', 'model', 'users.json'),
+            JSON.stringify(usersDB.users)
+        )
+        console.log(usersDB.users)
+        res.status(201).json({"message" : `${user}, was created!`})
+
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
 };
 
-module.exports = { handleNewUser };
-
+module.exports = {
+    handleNewUser
+}
