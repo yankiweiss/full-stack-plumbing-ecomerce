@@ -24,6 +24,11 @@ const handleLogin = async (req, res) => {
     const match = await bcrypt.compare(pwd, foundUser.password);
 
     if (match) {
+        const accessToken = jwt.sign(
+            {"username" : foundUser.username},
+            process.env.ACCESS_TOKEN_SECRET,
+            {expiresIn: '30s'}
+        )
         res.json({
             "message": `${user} is now successfully logged in!`
         })
