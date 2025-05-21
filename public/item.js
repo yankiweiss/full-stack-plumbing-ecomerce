@@ -3,76 +3,27 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
-const id = getQueryParam("id");
-
-if (!id) {
-  console.error("No ID provided in query string");
-  document.getElementById("items").textContent = "Invalid item ID.";
-} else {
-  fetch(
-    `https://full-stack-plumbing-ecomerce.vercel.app/items/${encodeURIComponent(
-      id
-    )}`
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      displayItem(data);
-
-    })
-    .catch((error) => {
-      console.error("Error fetching items:", error);
-      document.getElementById("items").textContent = "Failed to load items.";
-    });
-}
-
-const item = document.getElementById("items");
-
-function displayItem(data) {
-  const div = document.createElement("div");
-  div.className = 'item'
-
-  div.innerHTML = ` 
-    ${data.image ? `<img src="${data.image}" alt="${data.name}" width="200" />` : ""}
-  
-          <h1>${data.name}</h1>
-          <h3><span style="font-style: italic;">Price: </span> $${
-            data.price
-          }</h3>
-          <h3><span style="font-style: italic;">Description: </span><br>${
-            data.description
-          }</h3>
-        `;
-
-  item.appendChild(div);
-}
+const itemId = getQueryParam('id'); // e.g. from URL
 
 
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
 
-  // Fetch item data by ID
-  async function loadItemDetails() {
-    const itemId = getQueryParam('id');
-    if (!itemId) return;
-
-    console.log(itemId)
-
-    try {
-      const response = await fetch(`https://full-stack-plumbing-ecomerce.vercel.app/items/${itemId}`); // adjust path if needed
-      const item = await response.json();
-    
-
-      if (item && item.name) {
-      document.getElementById('item-name').textContent = item.name;
-    } else {
-      document.getElementById('item-name').textContent = 'Item not found';
+fetch(`https://full-stack-plumbing-ecomerce.vercel.app/items/${encodeURIComponent(itemId)}`)
+  .then(res => {
+    if (!res.ok) throw new Error(`Server error: ${res.status}`);
+    return res.json();
+  })
+  .then(item => {
+    document.getElementById('item-name').textContent = item.name;
+    // show image if available
+    if (item.image) {
+      const img = document.getElementById('item-image');
+      img.src = item.image;
+      img.alt = item.name;
     }
-  } catch (error) {
-    console.error('Error loading item:', error);
-    document.getElementById('item-name').textContent = 'Error loading item';
-  }
-}
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById('item-name').textContent = 'Failed to load item';
+  });
 
-loadItemDetails();
+

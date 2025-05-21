@@ -9,15 +9,16 @@ const verifyJWT = require("../../middleware/verifyJWT.js");
 // JSON DATA
 
 router.route("/search/:query").get(itemController.searchItems);
-router.get('/items/:id', itemController.getItem);
 
 
 router
   .route("/")
-  .get( itemController.getAllItems)
+  .get(itemController.getAllItems)
 
   .post(itemController.createNewItem)
 
   .delete(itemController.deleteItem);
+
+  router.route("/:id").get(itemController.getItem).put(itemController.updateItem);
 
 module.exports = router;
