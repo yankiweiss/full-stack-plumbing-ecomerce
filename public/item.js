@@ -15,11 +15,6 @@ fetch(`https://full-stack-plumbing-ecomerce.vercel.app/items/${encodeURIComponen
   .then(item => {
     document.getElementById('item-name').textContent = item.name;
     // show image if available
-    if (item.image) {
-      const img = document.getElementById('item-image');
-      img.src = item.image;
-      img.alt = item.name;
-    }
   })
   .catch(err => {
     console.error(err);
