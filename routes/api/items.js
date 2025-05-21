@@ -13,7 +13,7 @@ router.route("/:id").get(itemController.getItem).put(itemController.updateItem);
 
 router
   .route("/")
-  .get(verifyJWT, itemController.getAllItems)
+  .get( itemController.getAllItems)
 
   .post(itemController.createNewItem)
 
