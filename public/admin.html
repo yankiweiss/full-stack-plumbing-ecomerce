@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Page</title>
-  <link rel="stylesheet" href="./admin.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-</head>
+  <body>
+    <header id="mainHeader">
+      <div>
+        <img src="./images/download.png" />
+      </div>
+    </header>
 
-<body>
-  <header id="mainHeader">
-    <div>
-   <img src="./images/download.png">
-   </div>
-   <div>
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb m-4">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Admin</li>
+      </ol>
+    </nav>
 
-   </div>
-  </header>
-
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-  <ol class="breadcrumb m-4">
-    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Admin</li>
-  </ol>
-</nav>
-
-  <!--<h2 style="text-align: center; color: red">Alerts:</h2>-->
-  <nav>
-    <div>
-      <p style="font-weight: bold; font-size: 18px">Inventory:</p>
-      <i class="fa-solid fa-cart-flatbed fa-2xl"></i>
-    </div>
-
-    <!--<div class="hover-menu">
-      <button class="menu-button">
-        <div class="options">
-          <a href="edit.html" class="option">Edit</a>
-          <a href="add-item.html" class="option">Add Item</a>
+    <div id="mainContent">
+      <section>
+        <div>
+          <p>Inventory:</p>
+          <i class="fa-solid fa-cart-flatbed fa-2xl"></i>
         </div>
-      </button>
-      </div>-->
 
-    
-    <div class="hover-menu">
-      <button class="menu-button">
-        <p style="font-weight: bold; font-size: 18px">Products:</p>
-        <i class="fa-solid fa-boxes-stacked fa-2xl"></i>
-        <div class="options">
-          <a href="edit-item.html" class="option">Edit Item</a>
-          <a href="add-item.html" class="option">Add Item</a>
+        <div class="hover-menu">
+          <p>Products:</p>
+          <i class="fa-solid fa-boxes-stacked fa-2xl"></i>
+          <div class="options">
+            <a href="edit-item.html" class="option">Edit Item</a>
+            <a href="add-item.html" class="option">Add Item</a>
+          </div>
         </div>
-      </button>
 
+        <div>
+          <p>Orders:</p>
+          <i class="fa-solid fa-truck fa-2xl"></i>
+        </div>
+
+        <div id="users">
+          <p>Users:</p>
+          <i class="fa-solid fa-users fa-2xl"></i>
+        </div>
+
+        <div>
+          <p>Settings:</p>
+          <i class="fa-solid fa-sliders fa-2xl"></i>
+        </div>
+      </section>
+
+      <div id="alerts">
+        <h1>Alerts</h1>
+
+        <h6 style="color: red">A Example of a Alert!</h6>
+
+        <h6 style="color: red">
+          Another Example of a Alert that will be sending out for everyone
+        </h6>
+      </div>
     </div>
-    <div>
-      <p style="font-weight: bold; font-size: 18px">Orders:</p>
-      <i class="fa-solid fa-truck fa-2xl"></i>
-    </div>
-    <div id="users">
-      <p style="font-weight: bold; font-size: 18px">Users:</p>
-      <i class="fa-solid fa-users fa-2xl"></i>
-    </div>
 
-    <div>
-      <p style="font-weight: bold; font-size: 18px">Settings:</p>
-      <i class="fa-solid fa-sliders fa-2xl"></i>
-    </div>
-  </nav>
+    <footer
+      style="background-color: aliceblue; padding: 15px; border-radius: 8px"
+    >
+      <h3 style="text-align: center; font-style: italic">
+        Another Great Software Done By:
+        <br /><br /><img
+          id="jw-image"
+          style="width: 200px; display: block; margin: auto"
+          src="images/JW logo Trasparent-01.png"
+        />
+      </h3>
+    </footer>
 
-  <section class="alertsRight" style="color: red">
-    <h1>New Alert!</h1>
-    <p>Need to check out the Following items for Stock!</p>
-  </section>
-
-  <script src="./admin.js"></script>
-</body>
-
+    <script src="./admin.js"></script>
+  </body>
 </html>
