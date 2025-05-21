@@ -9,7 +9,8 @@ const verifyJWT = require("../../middleware/verifyJWT.js");
 // JSON DATA
 
 router.route("/search/:query").get(itemController.searchItems);
-router.route("/:id").get(itemController.getItem).put(itemController.updateItem);
+router.get('/items/:id', itemController.getItem);
+
 
 router
   .route("/")

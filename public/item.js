@@ -45,3 +45,34 @@ function displayItem(data) {
 
   item.appendChild(div);
 }
+
+
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  // Fetch item data by ID
+  async function loadItemDetails() {
+    const itemId = getQueryParam('id');
+    if (!itemId) return;
+
+    console.log(itemId)
+
+    try {
+      const response = await fetch(`https://full-stack-plumbing-ecomerce.vercel.app/items/${itemId}`); // adjust path if needed
+      const item = await response.json();
+    
+
+      if (item && item.name) {
+      document.getElementById('item-name').textContent = item.name;
+    } else {
+      document.getElementById('item-name').textContent = 'Item not found';
+    }
+  } catch (error) {
+    console.error('Error loading item:', error);
+    document.getElementById('item-name').textContent = 'Error loading item';
+  }
+}
+
+loadItemDetails();
