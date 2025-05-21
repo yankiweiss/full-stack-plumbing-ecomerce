@@ -1,0 +1,14 @@
+#mainHeader{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    width: 98%;
+    margin: 8px auto;
+}
+
+#mainHeader img{
+ width: 150px;
+
+}
+
