@@ -62,3 +62,21 @@ function displayItems(products) {
     items.appendChild(item);
   });
 }
+
+  function getQueryParamHTML(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  // Get 'category' from URL
+  const currentCategory = getQueryParamHTML('category');
+
+  // Update breadcrumb if category exists
+  if (currentCategory) {
+    const categoryElements = document.querySelectorAll('#category-name');
+    categoryElements.forEach((el) => {
+      el.textContent = decodeURIComponent(currentCategory);
+    });
+  }
+
+

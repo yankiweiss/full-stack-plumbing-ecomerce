@@ -1,14 +1,1 @@
-[
-    {
-        "name": "Jacob Weiss",
-        "email": "yakovw2706@gmail.com"
-    },
-    {
-        "username": "Lipa Weiss",
-        "password": "$2b$10$sZrZbkLXq8WMlixgNwNiguDxM8CN8QKQY7xMCQu0idQlsHevNlJZ2"
-    },
-    {
-        "username": "Yakov Weiss",
-        "password": "$2b$10$2eNqYsX2njaJB.s1687Q4O9OW8v90UUBkn4erygdRZ93Ww3XVmRju"
-    }
-]
+[{"username":"yakov weiss","password":"$2b$10$cMkQ5iOqzyeUwL32W9zCg.i4kJ79QE7ewK6./DiMp18mRIHd1Ueb2","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inlha292IHdlaXNzIiwiaWF0IjoxNzQ3Nzk0NjQ0LCJleHAiOjE3NDc4ODEwNDR9.QPzgk_DpDT0m4pniNO1uigPcTJa059QS2-b3Qkl0Kog"}]

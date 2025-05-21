@@ -85,14 +85,6 @@ a:hover {
 
 /* admin page styling the Nav and the form */
 
-nav {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  width: 10%;
-  background-color: rgb(233, 232, 232);
-  border-radius: 8px;
-}
 
 nav div {
   background-color: rgb(255, 255, 255);

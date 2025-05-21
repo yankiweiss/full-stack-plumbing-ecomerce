@@ -33,6 +33,7 @@ app.use('/register', require('./routes/register.js'))
 app.use('/auth', require('./routes/auth.js'))
 app.use('/user', require('./routes/user.js'))
 app.use('/upload', require('./routes/upload.js'))
+app.use('/refresh', require('./routes/refresh.js'))
 app.use(cookieParser())
 
 
