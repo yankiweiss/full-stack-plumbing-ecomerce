@@ -1,3 +1,11 @@
+
+
+#container{
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+}
+
 #mainHeader{
     background-color: lightblue;
     display: flex;
