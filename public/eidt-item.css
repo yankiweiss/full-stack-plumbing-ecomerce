@@ -1,0 +1,60 @@
+#container {
+  width: 65%;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#mainHeader {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+ justify-content: space-around;
+  width: 98%;
+  margin: auto;
+  padding: 15px;
+}
+
+#mainHeader div img {
+  width: 150px;
+  margin: auto;
+  display: block;
+  
+}
+
+#search {
+  width: 50%;
+  margin: auto;
+}
+.item div img {
+  width: 100%;
+}
+
+h1 {
+  margin: 75px 0px 75px 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  #container {
+    width: 85%;
+    margin: auto;
+  }
+
+  #search {
+    width: 25%;
+    margin: auto;
+  }
+
+  #categories {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .item {
+    margin: 15px;
+    max-width: 20%;
+  }
+}

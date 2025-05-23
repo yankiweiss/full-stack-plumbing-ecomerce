@@ -44,7 +44,7 @@
 console.log(categories)
 
 function displayItemsData () {
-    fetch("http://localhost:3500/items")
+    fetch("https://full-stack-plumbing-ecomerce.vercel.app/items")
         .then((res) => res.json())
         .then((data) => {
             displayItems(data);
@@ -74,7 +74,7 @@ function displayItems(products) {
 
 
    <div> ${product.image
-                ? `<img loading="lazy" src="${product.image}" alt="${product.name}" style="width: 300px; margin: auto; display: block"/>`
+                ? `<img loading="lazy" src="${product.image}" alt="${product.name}"/>`
                 : ""
             }</div>
 
