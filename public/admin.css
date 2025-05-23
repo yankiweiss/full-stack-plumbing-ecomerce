@@ -98,7 +98,7 @@ section {
 .options {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 0;
   background-color: #f1f1f1;
   min-width: 160px;
