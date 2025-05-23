@@ -11,18 +11,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./create-account.css" />
+    
   </head>
+
   <body>
+
     <header id="mainHeader">
         <div>
           <img src="./images/download.png" />
         </div>
       </header>
 
+      <div id="container">
+
     <h1 class="text-center">Create Account:</h1>
 
-    <form class="row g-3" style="width: 500px; margin: auto">
-      <div class="col-md-6">
+    <form >
+      <div class="row text-center">
         <label for="inputEmail4" class="form-label">Email</label>
         <input
           type="email"
@@ -31,7 +36,8 @@
           placeholder="createaccount@gmail.com"
         />
       </div>
-      <div class="col-md-6">
+
+      <div class="row text-center mt-4">
         <label for="inputPassword4" class="form-label">Password</label>
         <input
           type="password"
@@ -40,7 +46,8 @@
           placeholder="Y@*789Qop"
         />
       </div>
-      <div>
+
+      <div class="text-center mt-5">
         <button type="submit" id="submit-user" class="btn btn-primary">
           Create Account
         </button>
@@ -48,6 +55,16 @@
     </form>
 
     <p style="text-align: center;" id="response-message"></p>
+
+    </div>
+
+    <footer style="background-color: aliceblue; padding: 15px; border-radius: 15px">
+      <h3 style="text-align: center; font-style: italic">
+        Another Great Software Done By:
+        <br /><br /><img id="jw-image" style="width: 200px; display: block; margin: auto"
+          src="images/JW logo Trasparent-01.png" />
+      </h3>
+    </footer>
 
     <script src="create-account.js"></script>
   </body>
