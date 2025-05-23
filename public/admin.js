@@ -7,7 +7,7 @@ const submit = document.querySelector(".submit");
 function addCategory() {
   const categoryValue = category.value;
   const itemsValue = items.value;
-  fetch("http://localhost:3500/category", {
+  fetch("https://full-stack-plumbing-ecomerce.vercel.app/category", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

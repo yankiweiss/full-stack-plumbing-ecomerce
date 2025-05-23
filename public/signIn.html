@@ -10,45 +10,64 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./sign-in.css" />
   </head>
   <body>
-    <header id="mainHeader">
-      <div id="compnay-info">
-        <h1 id="js">The Plumbing hub</h1>
-        <h4>Your Plumbing supplies HUB</h4>
-      </div>
-    </header>
+    
+      <header id="mainHeader">
+        <div>
+          <img src="./images/download.png" />
+        </div>
+      </header>
+      <div id="container">
+      <h1 class="text-center" style="color: rgb(0, 0, 99);">Sign In Page</h1>
 
-    <h1 class="text-center">Sign In Page</h1>
+      <form class="row">
+        <div class="text-center" >
+          <label for="inputEmail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="signin@gmail.com"
+          />
+        </div>
+        <div class="text-center mt-4">
+          <label for="inputPassword" class="text-center form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Y@*789Qop"
+          />
+        </div>
 
-    <form class="row g-3" style="width: 500px; margin: auto">
-      <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="inputEmail"
-          placeholder="signin@gmail.com"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="inputPassword"
-          placeholder="Y@*789Qop"
-        />
-      </div>
+        <div class="text-center mt-5">
+          <button
+            type="submit"
+            id="sign-in"
+            class="btn btn-primary"
+            for="sign-in"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
 
-     
-      <div class="col-12">
-        <button type="submit"  id="sign-in" class="btn btn-primary" for="sign-in">Sign in</button>
-      </div>
-    </form>
+      <p
+        style="text-align: center"
+        id="response-message"
+        style="color: green"
+      ></p>
+    </div>
 
-    <p style="text-align: center;" id="response-message" style="color: green;"></p>
+    <footer style="background-color: aliceblue; padding: 15px; border-radius: 15px">
+      <h3 style="text-align: center; font-style: italic">
+        Another Great Software Done By:
+        <br /><br /><img id="jw-image" style="width: 200px; display: block; margin: auto"
+          src="images/JW logo Trasparent-01.png" />
+      </h3>
+    </footer>
     <script src="sign-in.js"></script>
   </body>
 </html>

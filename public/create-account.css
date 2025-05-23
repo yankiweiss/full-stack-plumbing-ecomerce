@@ -1,7 +1,18 @@
+body{
+    margin: 0px;
+}
+
+html{
+    margin: 0px;
+}
+
 #container{
-    width: 95%;
+    width: 70%;
     margin: auto;
-    border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #mainHeader{
@@ -18,13 +29,6 @@
 
 }
 
-@media screen and (min-width: 1024px) {
-
-    #container{
-    max-width: 55%;
-    margin: auto;
-    border-radius: 8px;
+h1{
+    margin-top: 75px;
 }
-    
-}
-
