@@ -51,6 +51,8 @@ h1 {
   #categories {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
     
   }
   .item {
