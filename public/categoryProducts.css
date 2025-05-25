@@ -1,25 +1,28 @@
 body {
   margin: 0;
+  overflow-x: hidden ;
 }
 
 #mainHeader {
+  width: 92%;
   display: flex;
   justify-content: space-around;
   background-color: lightblue;
   border-radius: 8px;
   flex-wrap: wrap;
   padding: 15px;
+  margin: auto;
 }
 
 #mainHeader div img {
-  width: 60%;
+  width: 50%;
   display: block;
   margin: auto;
 }
 
 #container {
-  width: 75%;
-  margin: 5px auto;
+  width: 98%;
+  margin: auto;
   background-color: rgb(238, 238, 238);
 }
 
