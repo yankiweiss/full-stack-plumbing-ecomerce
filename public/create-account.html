@@ -11,58 +11,70 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./create-account.css" />
-    
   </head>
 
   <body>
-
     <header id="mainHeader">
-        <div>
-          <img src="./images/download.png" />
+      <div>
+        <img src="./images/download.png" />
+      </div>
+    </header>
+
+    <div id="container">
+
+      <h1 class="text-center">Create Account:</h1>
+
+      <form>
+        <div class="row text-center mt-4">
+          <label for="inputUserName" class="form-label">Username:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputUserName"
+            placeholder="Create Your Username."
+          />
         </div>
-      </header>
 
-      <div id="container">
+        <div class="row text-center mt-4">
+          <label for="inputEmail4" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="createaccount@gmail.com"
+          />
+        </div>
 
-    <h1 class="text-center">Create Account:</h1>
+        <div class="row text-center mt-4">
+          <label for="inputPassword4" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Y@*789Qop"
+          />
+        </div>
 
-    <form >
-      <div class="row text-center">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          id="inputEmail"
-          placeholder="createaccount@gmail.com"
-        />
-      </div>
+        <div class="text-center mt-5">
+          <button type="submit" id="submit-user" class="btn btn-primary">
+            Create Account
+          </button>
+        </div>
+      </form>
 
-      <div class="row text-center mt-4">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="inputPassword"
-          placeholder="Y@*789Qop"
-        />
-      </div>
-
-      <div class="text-center mt-5">
-        <button type="submit" id="submit-user" class="btn btn-primary">
-          Create Account
-        </button>
-      </div>
-    </form>
-
-    <p style="text-align: center;" id="response-message"></p>
-
+      <p style="text-align: center" id="response-message"></p>
     </div>
 
-    <footer style="background-color: aliceblue; padding: 15px; border-radius: 15px">
+    <footer
+      style="background-color: aliceblue; padding: 15px; border-radius: 15px"
+    >
       <h3 style="text-align: center; font-style: italic">
         Another Great Software Done By:
-        <br /><br /><img id="jw-image" style="width: 200px; display: block; margin: auto"
-          src="images/JW logo Trasparent-01.png" />
+        <br /><br /><img
+          id="jw-image"
+          style="width: 200px; display: block; margin: auto"
+          src="images/JW logo Trasparent-01.png"
+        />
       </h3>
     </footer>
 

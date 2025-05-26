@@ -1,20 +1,23 @@
 const email = document.getElementById("inputEmail");
 const password = document.getElementById("inputPassword");
+const username = document.getElementById('inputUserName')
 const submitUser = document.getElementById("submit-user");
 const responseMessage = document.getElementById('response-message');
 
 function submitUserInfo(e) {
   const emailValue = email.value;
   const passValue = password.value;
+  const usernameValue = username.value;
   e.preventDefault();
-  fetch("http://localhost:3500/register", {
+  fetch("http://localhost:3500/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      user: emailValue,
-      pwd: passValue,
+      email: emailValue,
+      password: passValue,
+      username: usernameValue
     }),
   })
     .then((res) => {

@@ -1,0 +1,82 @@
+#usersTable {
+    width: 20%;
+    border: 1px solid rgb(238, 237, 237);
+    border-radius: 15px;
+      border-radius: 8px;
+        border-collapse: separate;
+        /* KEY: separate borders so radius can apply */
+        border-spacing: 0;
+        /* remove gaps between cells */
+        overflow: hidden;
+    }
+
+#user-h1 {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+#mainHeader {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    width: 98%;
+    margin: 8px auto;
+}
+
+#mainHeader img {
+    width: 150px;
+
+}
+
+#usersTable td {
+    border: 1px solid rgb(238, 237, 237);
+    padding: 5px;
+    font-style: italic;
+}
+
+#usersTable th {
+    border: 1px solid rgb(238, 237, 237);
+    padding: 5px;
+    background-color: rgb(221, 221, 221);
+
+}
+
+#usersTable tr {
+    border: 1px solid rgb(238, 237, 237);
+    
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    #usersTable {
+        width: 50%;
+        margin: auto;
+        border: 3px solid rgb(238, 237, 237);
+        border-radius: 15px;
+        border-collapse: separate;
+        /* KEY: separate borders so radius can apply */
+        border-spacing: 0;
+        /* remove gaps between cells */
+        overflow: hidden;
+    }
+
+    #usersTable td {
+        border: 1px solid rgb(238, 237, 237);
+        padding: 10px 15px 10px 30px;
+    }
+
+    #usersTable th {
+        border: 1px solid rgb(238, 237, 237);
+        padding: 10px 10px 10px 30px;
+        text-align: center;
+        background-color: rgb(221, 221, 221);
+
+    }
+
+    #usersTable tr {
+        border: 1px solid rgb(238, 237, 237);
+    }
+
+}

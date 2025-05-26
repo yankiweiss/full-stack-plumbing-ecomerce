@@ -41,7 +41,7 @@
 
 
 
-console.log(categories)
+
 
 function displayItemsData () {
     fetch("https://full-stack-plumbing-ecomerce.vercel.app/items")
