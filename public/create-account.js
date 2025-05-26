@@ -9,7 +9,7 @@ function submitUserInfo(e) {
   const passValue = password.value;
   const usernameValue = username.value;
   e.preventDefault();
-  fetch("http://localhost:3500/users", {
+  fetch("https://full-stack-plumbing-ecomerce.vercel.app/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
