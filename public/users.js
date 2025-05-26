@@ -21,6 +21,8 @@ function displayUsers(users) {
       <td>${user.username}</td>
       <td>${user.email}</td>
       <td>${user.role}</td>
+      <td>01/22/1999</td>
+      
     `;
     tbody.appendChild(row);
   });
