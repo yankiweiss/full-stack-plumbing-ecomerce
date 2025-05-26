@@ -17,7 +17,7 @@ router.route('/post')
 
 router
   .route("/")
-  .get(verifyJWT, verifyRoles(ROLES_LIST.Admin) ,itemController.getAllItems)
+  .get(itemController.getAllItems)
 
   
 
