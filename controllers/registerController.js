@@ -22,7 +22,10 @@ const handleNewUser = async (req, res) => {
 
         const hashedPwd = await bcrypt.hash(pwd, 10)
 
-        const newUser = {"username": user, "pwd": hashedPwd}
+        const newUser = {
+            "username": user,
+            "roles": {"Users": 1000},
+             "password": hashedPwd}
         usersDB.setUsers([...usersDB.users, newUser])
 
         await fsPromises.writeFile(
