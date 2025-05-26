@@ -1,5 +1,5 @@
 function displayUsersData() {
-  fetch("http://localhost:3500/users")
+  fetch("https://full-stack-plumbing-ecomerce.vercel.app/users")
     .then((res) => res.json())
     .then((data) => {
       displayUsers(data);
