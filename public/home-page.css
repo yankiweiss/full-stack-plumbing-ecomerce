@@ -254,4 +254,8 @@ body {
   margin: auto;
 }
 
+.category{
+  cursor: pointer;
+}
+
 

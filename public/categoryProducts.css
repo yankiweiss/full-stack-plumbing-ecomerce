@@ -43,6 +43,7 @@ body {
   text-align: center;
   padding: 5px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .product:hover {
